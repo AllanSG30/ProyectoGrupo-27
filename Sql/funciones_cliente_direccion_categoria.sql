@@ -103,13 +103,19 @@ CREATE OR REPLACE FUNCTION ValidarFormatoCorreo
 )
 RETURN NUMBER
 AS
+    v_pos_arroba NUMBER;
+    v_pos_punto  NUMBER;
 BEGIN
     IF p_correo IS NULL THEN
         RETURN 0;
     END IF;
 
-    IF INSTR(p_correo, '@') > 1
-       AND INSTR(p_correo, '.') > INSTR(p_correo, '@') + 1
+    v_pos_arroba := INSTR(TRIM(p_correo), '@');
+    v_pos_punto := INSTR(TRIM(p_correo), '.', v_pos_arroba + 2);
+
+    IF v_pos_arroba > 1
+       AND v_pos_punto > v_pos_arroba + 1
+       AND v_pos_punto < LENGTH(TRIM(p_correo))
        AND LENGTH(TRIM(p_correo)) >= 6 THEN
         RETURN 1;
     ELSE
