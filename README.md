@@ -71,7 +71,8 @@ ProyectoGrupo-27/
 │   ├── vistas_cliente_direccion_categoria.sql
 │   ├── cursores_cliente_direccion_categoria.sql
 │   ├── paquetes_cliente_direccion_categoria.sql
-│   └── pruebas_andrey.sql
+│   ├── pruebas_andrey.sql
+│   └── objetos_complementarios_avance2.sql
 │
 └── README.md
 ```
@@ -116,6 +117,11 @@ Sql/funciones_cliente_direccion_categoria.sql
 Sql/vistas_cliente_direccion_categoria.sql
 Sql/cursores_cliente_direccion_categoria.sql
 Sql/paquetes_cliente_direccion_categoria.sql
+```
+### 5. Objetos complementarios del Avance II
+
+```text
+Sql/objetos_complementarios_avance2.sql
 ```
 
 ## Módulo de Andrey
@@ -281,10 +287,28 @@ La conexión debe configurarse según el ambiente local de Oracle utilizado por 
 - Organización del repositorio por carpetas.
 - Documentación del orden de ejecución de scripts.
 
+```md
+## Conteo final de objetos programados
+
+Con base en la revisión realizada en el repositorio, el proyecto cuenta con la siguiente cantidad de objetos programados:
+
+| Objeto | Cantidad actual | Mínimo solicitado | Estado |
+| ------ | --------------- | ----------------- | ------ |
+| Procedimientos almacenados | 48 | 25 | Cumple |
+| Funciones | 16 | 15 | Cumple |
+| Vistas | 11 | 10 | Cumple |
+| Triggers | 6 | 5 | Cumple |
+| Cursores | 16 | 15 | Cumple |
+| Paquetes | 10 | 10 | Cumple |
+
+Este conteo permite evidenciar que el repositorio cumple con los mínimos técnicos solicitados para el Avance II.
+
 ## Estado del avance
 
 Para este segundo avance, el repositorio contiene la estructura de base de datos, objetos PL/SQL por módulo, scripts de prueba y archivos de conexión desde Python.
 
 El módulo de clientes, direcciones y categorías fue validado en Oracle SQL, comprobando la compilación y ejecución de procedimientos CRUD, funciones, vistas, cursores y paquetes PL/SQL.
+
+Además, se agregó el archivo `objetos_complementarios_avance2.sql`, el cual incluye objetos adicionales para completar los mínimos solicitados de funciones, vistas, cursores y paquetes. Estos objetos complementarios también fueron ejecutados en Oracle SQL y finalizaron correctamente.
 
 El objetivo del repositorio es evidenciar un avance funcional del sistema y mantener el código organizado para la integración final del proyecto.
