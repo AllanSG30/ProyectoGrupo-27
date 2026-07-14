@@ -287,7 +287,6 @@ La conexión debe configurarse según el ambiente local de Oracle utilizado por 
 - Organización del repositorio por carpetas.
 - Documentación del orden de ejecución de scripts.
 
-```md
 ## Conteo final de objetos programados
 
 Con base en la revisión realizada en el repositorio, el proyecto cuenta con la siguiente cantidad de objetos programados:
